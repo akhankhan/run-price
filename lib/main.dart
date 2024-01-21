@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:myapp/a.dart';
 import 'package:myapp/presentation/common/glass_morphism.dart';
+import 'package:myapp/presentation/screens/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  StepsScreen(),
+      home:  HomePageScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
